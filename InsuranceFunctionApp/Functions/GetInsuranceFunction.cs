@@ -42,7 +42,7 @@ namespace InsuranceFunctionApp.Functions
 
                 var insurances = new List<Insurance>();
 
-                if (personId == "12345")
+                if (personId == "9509116666")
                 {
                     insurances.Add(new Insurance { Type = "Pet", MonthlyCost = 10 });
                     insurances.Add(new Insurance { Type = "Car", MonthlyCost = 30 });
@@ -58,7 +58,7 @@ namespace InsuranceFunctionApp.Functions
                         insurances.Last().Vehicle = null;
                     }
                 }
-                else if (personId == "67890")
+                else if (personId == "8509115555")
                 {
                     insurances.Add(new Insurance { Type = "Personal Health", MonthlyCost = 20 });
                 }
@@ -70,13 +70,20 @@ namespace InsuranceFunctionApp.Functions
                     return response;
                 }
 
+                // Check custom header
+                bool includeTotal = req.Headers.TryGetValues("TotalMonthlyCost", out var values) &&
+                                    values.FirstOrDefault()?.ToLowerInvariant() == "true";
+
+
+                response.StatusCode = HttpStatusCode.OK;
+
                 var result = new InsuranceResponse
                 {
                     PersonId = personId,
-                    Insurances = insurances
+                    Insurances = insurances,
+                    TotalMonthlyCost = includeTotal ? insurances.Sum(i => i.MonthlyCost) : null
                 };
 
-                response.StatusCode = HttpStatusCode.OK;
                 await response.WriteAsJsonAsync(result);
             }
             catch (Exception ex)

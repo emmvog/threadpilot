@@ -7,6 +7,6 @@ namespace InsuranceFunctionApp.Models
     {
         public string PersonId { get; set; }
         public List<Insurance> Insurances { get; set; }
-        public double TotalMonthlyCost => Insurances.Sum(i => i.MonthlyCost);
+        public decimal? TotalMonthlyCost { get; set; }
     }
 }

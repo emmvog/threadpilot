@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7q3LadE7r74=",
+  "dgSpecHash": "kUuM0BFX9Ng=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
+  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\google.protobuf\\3.28.0\\google.protobuf.3.28.0.nupkg.sha512",

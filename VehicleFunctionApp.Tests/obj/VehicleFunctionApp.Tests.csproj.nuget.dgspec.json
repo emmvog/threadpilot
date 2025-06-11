@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj": {}
+    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj": {
+    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
         "projectName": "VehicleFunctionApp.Tests",
-        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
+        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
         "packagesPath": "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\obj\\",
+        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj": {
-                "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj"
+              "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj": {
+                "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj": {
+    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
+        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
         "projectName": "VehicleFunctionApp",
-        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
+        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\VehicleFunctionApp.csproj",
         "packagesPath": "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp\\obj\\",
+        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

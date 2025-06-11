@@ -2,7 +2,7 @@
   {
     "name": "GetInsurance",
     "scriptFile": "InsuranceFunctionApp.dll",
-    "entryPoint": "InsuranceFunctionApp.Functions.GetInsuranceFunction.Run",
+    "entryPoint": "InsuranceFunctionApp.Functions.GetInsuranceFunction.RunAsync",
     "language": "dotnet-isolated",
     "properties": {
       "IsCodeless": false

@@ -2,7 +2,7 @@
   {
     "name": "GetVehicle",
     "scriptFile": "VehicleFunctionApp.dll",
-    "entryPoint": "VehicleFunctionApp.Functions.GetVehicleFunction.Run",
+    "entryPoint": "VehicleFunctionApp.Functions.GetVehicleFunction.RunAsync",
     "language": "dotnet-isolated",
     "properties": {
       "IsCodeless": false

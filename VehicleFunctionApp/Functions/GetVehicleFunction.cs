@@ -1,8 +1,11 @@
+using Azure;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Threading.Tasks;
 using VehicleFunctionApp.Models;
 
 namespace VehicleFunctionApp.Functions
@@ -16,24 +19,40 @@ namespace VehicleFunctionApp.Functions
         };
 
         [Function("GetVehicle")]
-        public HttpResponseData Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "vehicle/{registrationNumber}")] HttpRequestData req,
-            string registrationNumber,
-            FunctionContext executionContext)
+        public async Task<HttpResponseData> RunAsync(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "vehicle/{registrationNumber}")] HttpRequestData req, string registrationNumber, FunctionContext executionContext)
         {
             var logger = executionContext.GetLogger("GetVehicleFunction");
-            logger.LogInformation($"Fetching vehicle for: {registrationNumber}");
 
             var response = req.CreateResponse();
-            if (Vehicles.TryGetValue(registrationNumber.ToUpper(), out var vehicle))
+
+            try
             {
-                response.StatusCode = HttpStatusCode.OK;
-                response.WriteAsJsonAsync(vehicle).GetAwaiter();
+                logger.LogInformation($"Fetching vehicle for: {registrationNumber}");
+
+                if (string.IsNullOrWhiteSpace(registrationNumber))
+                {
+                    response.StatusCode = HttpStatusCode.BadRequest;
+                    await response.WriteAsJsonAsync(new { error = "Registration number is required." });
+                    return response;
+                }
+
+                if (Vehicles.TryGetValue(registrationNumber.ToUpper(), out var vehicle))
+                {
+                    response.StatusCode = HttpStatusCode.OK;
+                    await response.WriteAsJsonAsync(vehicle);
+                }
+                else
+                {
+                    response.StatusCode = HttpStatusCode.NotFound;
+                    await response.WriteAsJsonAsync(new { error = "Vehicle not found." });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                response.StatusCode = HttpStatusCode.NotFound;
-                response.WriteStringAsync("Vehicle not found").Wait();
+                logger.LogError(ex, "Unexpected error occurred in GetVehicle function.");
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                await response.WriteAsJsonAsync(new { error = "Internal server error. Please try again later." });
             }
 
             return response;

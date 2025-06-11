@@ -7,54 +7,84 @@ using System.Net;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System;
 
 namespace InsuranceFunctionApp.Functions
 {
     public class GetInsuranceFunction
     {
         private readonly IVehicleClient _vehicleClient;
-        private readonly ILogger _logger;
 
-        public GetInsuranceFunction(IVehicleClient vehicleClient, ILoggerFactory loggerFactory)
+        public GetInsuranceFunction(IVehicleClient vehicleClient)
         {
             _vehicleClient = vehicleClient;
-            _logger = loggerFactory.CreateLogger<GetInsuranceFunction>();
         }
 
         [Function("GetInsurance")]
-        public async Task<HttpResponseData> Run(
+        public async Task<HttpResponseData> RunAsync(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "insurance/{personId}")] HttpRequestData req,
-            string personId)
+            string personId,
+            FunctionContext executionContext)
         {
-            if (string.IsNullOrWhiteSpace(personId))
-            {
-                var badRes = req.CreateResponse(HttpStatusCode.BadRequest);
-                await badRes.WriteStringAsync("Person ID is required.");
-                return badRes;
-            }
+            var logger = executionContext.GetLogger("GetInsuranceFunction");
+            var response = req.CreateResponse();
 
-            var insurances = new List<Insurance>();
-            if (personId == "12345")
+            try
             {
-                insurances.Add(new Insurance { Type = "Pet", MonthlyCost = 10 });
-                insurances.Add(new Insurance { Type = "Car", MonthlyCost = 30 });
-                var vehicle = await _vehicleClient.GetVehicleAsync("ABC123");
-                insurances.Last().Vehicle = vehicle;
-            }
+                logger.LogInformation($"Fetching insurance for person: {personId}");
 
-            if (!insurances.Any())
-            {
-                var notFound = req.CreateResponse(HttpStatusCode.NotFound);
-                await notFound.WriteStringAsync("No insurance found for person.");
-                return notFound;
-            }
+                if (string.IsNullOrWhiteSpace(personId))
+                {
+                    response.StatusCode = HttpStatusCode.BadRequest;
+                    await response.WriteAsJsonAsync(new { error = "Person ID is required." });
+                    return response;
+                }
 
-            var response = req.CreateResponse(HttpStatusCode.OK);
-            await response.WriteAsJsonAsync(new InsuranceResponse
+                var insurances = new List<Insurance>();
+
+                if (personId == "12345")
+                {
+                    insurances.Add(new Insurance { Type = "Pet", MonthlyCost = 10 });
+                    insurances.Add(new Insurance { Type = "Car", MonthlyCost = 30 });
+
+                    try
+                    {
+                        var vehicle = await _vehicleClient.GetVehicleAsync("ABC123");
+                        insurances.Last().Vehicle = vehicle;
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.LogWarning(ex, "Vehicle service unavailable — skipping vehicle info.");
+                        insurances.Last().Vehicle = null;
+                    }
+                }
+                else if (personId == "67890")
+                {
+                    insurances.Add(new Insurance { Type = "Personal Health", MonthlyCost = 20 });
+                }
+
+                if (!insurances.Any())
+                {
+                    response.StatusCode = HttpStatusCode.NotFound;
+                    await response.WriteAsJsonAsync(new { error = "No insurance found for person." });
+                    return response;
+                }
+
+                var result = new InsuranceResponse
+                {
+                    PersonId = personId,
+                    Insurances = insurances
+                };
+
+                response.StatusCode = HttpStatusCode.OK;
+                await response.WriteAsJsonAsync(result);
+            }
+            catch (Exception ex)
             {
-                PersonId = personId,
-                Insurances = insurances
-            });
+                logger.LogError(ex, "Unhandled exception in GetInsurance function.");
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                await response.WriteAsJsonAsync(new { error = "Internal server error." });
+            }
 
             return response;
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj": {}
+    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj": {
+    "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
+        "projectUniqueName": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
         "projectName": "InsuranceFunctionApp",
-        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
+        "projectPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
         "packagesPath": "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\obj\\",
+        "outputPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

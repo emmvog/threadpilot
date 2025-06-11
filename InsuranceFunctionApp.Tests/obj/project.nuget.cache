@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uep56UL6xDM=",
+  "dgSpecHash": "cKZ6L0Zzr8A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp.Tests\\InsuranceFunctionApp.Tests.csproj",
+  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp.Tests\\InsuranceFunctionApp.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\azure.core\\1.10.0\\azure.core.1.10.0.nupkg.sha512",
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

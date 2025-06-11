@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PKyLk6cUyCs=",
+  "dgSpecHash": "91tD5/crdOU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
+  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\InsuranceFunctionApp\\InsuranceFunctionApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\azure.core\\1.10.0\\azure.core.1.10.0.nupkg.sha512",
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\google.protobuf\\3.21.7\\google.protobuf.3.21.7.nupkg.sha512",

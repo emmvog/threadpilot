@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ar5ME2xRjU8=",
+  "dgSpecHash": "T/Tpwdv7HQs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
+  "projectFilePath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\emmvog\\threadpilot\\VehicleFunctionApp.Tests\\VehicleFunctionApp.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\emmanouilvogiatzis\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

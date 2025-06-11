@@ -19,7 +19,7 @@ namespace VehicleFunctionApp.Tests
 
             Assert.True(exists);
             Assert.NotNull(vehicle);
-            Assert.Equal("Toyota", vehicle.Make);
+            Assert.Equal("Mercedes", vehicle.Make);
         }
 
         [Fact]

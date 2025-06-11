@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35D53E12-E54F-4C2F-98C0-2C2C1ABCF5EE}|..\\InsuranceFunctionApp.Tests\\InsuranceFunctionApp.Tests.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp.tests\\basicinsurancetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 77,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BasicInsuranceTests.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "RelativeDocumentMoniker": "..\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs*",
+              "RelativeToolTip": "..\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs*",
+              "ViewState": "AgIAAAAAAACAAAAAAAARwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:46:15.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp\\functions\\getinsurancefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|solutionrelative:functions\\getinsurancefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D53E12-E54F-4C2F-98C0-2C2C1ABCF5EE}|..\\InsuranceFunctionApp.Tests\\InsuranceFunctionApp.Tests.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp.tests\\basicinsurancetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp\\models\\insuranceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|solutionrelative:models\\insuranceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|solutionrelative:models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|c:\\users\\emmanouilvogiatzis\\source\\repos\\insurancefunctionapp\\models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F23F6EB5-BEE9-E02B-7723-3BF7434D346E}|InsuranceFunctionApp.csproj|solutionrelative:models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 77,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:00:18.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetInsuranceFunction.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Functions\\GetInsuranceFunction.cs",
+              "RelativeDocumentMoniker": "Functions\\GetInsuranceFunction.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Functions\\GetInsuranceFunction.cs",
+              "RelativeToolTip": "Functions\\GetInsuranceFunction.cs",
+              "ViewState": "AgIAABQAAAAAyszMzIwiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:00:02.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InsuranceResponse.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\InsuranceResponse.cs",
+              "RelativeDocumentMoniker": "Models\\InsuranceResponse.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\InsuranceResponse.cs",
+              "RelativeToolTip": "Models\\InsuranceResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:47:39.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Insurance.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\Insurance.cs",
+              "RelativeDocumentMoniker": "Models\\Insurance.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\Insurance.cs",
+              "RelativeToolTip": "Models\\Insurance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:47:38.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp\\Models\\Vehicle.cs",
+              "RelativeToolTip": "Models\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:47:36.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasicInsuranceTests.cs",
+              "DocumentMoniker": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "RelativeDocumentMoniker": "..\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "ToolTip": "C:\\Users\\emmanouilvogiatzis\\source\\repos\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "RelativeToolTip": "..\\InsuranceFunctionApp.Tests\\BasicInsuranceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:46:15.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

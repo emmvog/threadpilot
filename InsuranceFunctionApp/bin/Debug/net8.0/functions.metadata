@@ -1,0 +1,29 @@
+[
+  {
+    "name": "GetInsurance",
+    "scriptFile": "InsuranceFunctionApp.dll",
+    "entryPoint": "InsuranceFunctionApp.Functions.GetInsuranceFunction.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "insurance/{personId}",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]

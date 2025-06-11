@@ -45,6 +45,7 @@ The codebase is also structured for **extensibility**:
 - Modular, separated projects make it easier to test, deploy, and scale services independently.
 - Adding new insurance types or services (e.g., home insurance, travel insurance) would only require extending the insurance data logic without altering the core integration.
 
+- Use headers for additional logic, for example TotalMonthlyCost header used in api/insurance request
 ---
 
 ## How to Run It Locally
